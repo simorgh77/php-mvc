@@ -1,15 +1,14 @@
 <?php namespace App\models;
-use App\models\ModelInterface;
-use App\libraries\Database;
+require_once "../models/ModelInterface.php";
+require_once "../libraries/CoreDatabase.php";
+
 class ModelClass implements ModelInterface {
     private $dataBase;
 
-    /**
-     * @param $dataBase
-     */
-    public function __construct($dataBase)
+   public function __construct()
     {
-        $this->dataBase = Database::DbInstance();
+        $this->dataBase = \CoreDatabase::DbInstance();
+         return $this->dataBase;
     }
 
 
@@ -58,7 +57,8 @@ class ModelClass implements ModelInterface {
         try {
             $statement = $this->dataBase->prepare("select * from step1 where email=:email");
             $statement->bindParam('email', $email);
-            $statement->execute();
+           $statement->execute();
+            return $statement->fetchObject();
         }
         catch (\Exception $e){
             return $e->getMessage();
@@ -69,7 +69,7 @@ class ModelClass implements ModelInterface {
     {
         try {
             $statement = $this->dataBase->prepare("select * from step1 ");
-            $statement->bindParam('email', $email);
+//            $statement->bindParam('email', $email);
             $statement->execute();
         }
         catch (\Exception $e){
@@ -82,7 +82,7 @@ class ModelClass implements ModelInterface {
     {
         try {
             $statement = $this->dataBase->prepare("update step1 ");
-            $statement->bindParam('email', $email);
+//            $statement->bindParam('email', $email);
             $statement->execute();
         }
         catch (\Exception $e){
@@ -102,4 +102,5 @@ class ModelClass implements ModelInterface {
         }
     }
     //
+
 }

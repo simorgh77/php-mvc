@@ -9,4 +9,5 @@ interface ModelInterface{
     public function fetchAll($id);
     public function updateById($id,$newData);
     public function updateByEmail($email,$newData);
+
 }

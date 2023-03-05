@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'taha/step2',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '0ec7b41646dc1765ead5975b4cddb181504f8132',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'taha/step2' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '0ec7b41646dc1765ead5975b4cddb181504f8132',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

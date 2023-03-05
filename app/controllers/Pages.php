@@ -11,3 +11,6 @@ class Pages extends ViewHelper{
      $this->RegisterPage();
     }
 }
+
+
+

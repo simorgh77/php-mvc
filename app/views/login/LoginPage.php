@@ -1,10 +1,7 @@
 <?php
 
-
 ?>
-
 <!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
@@ -32,7 +29,7 @@
                 <span class="error" id="password_empty">  </span>
         </div>
         <div class="forget-password">
-            <a href="../Register/RegisterPage.php">ثبت نام</a>
+            <a href="../public/Register/RegisterPage.php">ثبت نام</a>
             <a href="../resetPassword/resetPassword.php">بازیابی رمز عبور</a>
         </div>
         <button type="button" class="submit-button" id="submit_button">ورود</button>
@@ -41,5 +38,5 @@
 </form>
 </div>
 </body>
-<!--<script src="submit.js"> </script>-->
+<script src="../../../public/js/login.js"> </script>
 </html>
